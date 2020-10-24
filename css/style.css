@@ -5,8 +5,14 @@
     font-family: 'Raleway', sans-serif;
 }
 
+h1, h2, h3, h4 {
+    color: #393939 !important;
+
+}
+
 body, p {
     color: #626262;
+    font: 400;
 }
 
 .navbar-fixed-top.scrolled {
@@ -132,7 +138,7 @@ body, p {
 }
 
 .first-head-text div h1 {
-    color: #393939;
+    color: #393939 !important;
     font-size: 50px;
     font-weight: 700;
     padding-bottom: 10px;
@@ -159,16 +165,69 @@ body, p {
     border-style: none;
 }
 
+#send:hover {
+    color: #00BFD8;
+    background-color: #FFF;
+    border: 2px solid;
+}
+
 .services {
-    padding: 40px 0px;
+    padding: 60px 0px;
+}
+
+.card {
+    height: 350px;
+}
+
+.card-services h3 {
+    color: #393939;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.card-body {
+    width: 100%;
+}
+
+.card-body h4 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 10px !important;
+}
+
+.card-body p {
+    /* word-spacing: 0.1rem; */
+    line-height: 1.5rem;
+    font-stretch: ultra-condensed;
 }
 
 /* .card img {
     display: flex !important;
     align-items: center !important;
     justify-items: center !important;    
-}
+} */
 
 .service-img {
     width: 100px;
-} */
+    display: flex;
+    justify-items: center;
+    align-content: center;
+}
+
+.second-img {
+    width: 100%;
+    margin-left: 40px;
+}
+
+.second-head-text {
+    height: 100%;
+    display: table;
+}
+
+.second-head-text div {
+    line-height: 25px;
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
