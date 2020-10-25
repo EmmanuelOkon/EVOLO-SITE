@@ -15,6 +15,105 @@ body, p {
     font: 400;
 }
 
+.spinner-border {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .75 linear infinite;
+    animation: spinner-border .75 linear infinite;
+}
+
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.2em;
+}
+
+@-webkit-keyframes spinner-grow {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes spinner-grow {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.spinner-grow {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    background-color: currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: spinner-grow .75 linear infinite;
+    animation: spinner-grow .75 linear infinite;
+}
+
+.spinner-grow-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #FFF;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3.75rem;
+    height: 1.25rem;
+    margin: -0.625rem 0 0 -1.875rem;
+    text-align: center;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+.spinner > div {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: #00BFD8;
+    -webkit-animation: sk bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk bouncedelay 1.4s infinite ease-in-out both;
+}
+
 .navbar-fixed-top.scrolled {
     background-color: #00BFD8 !important;
     transition: background-color 200ms linear;
@@ -211,8 +310,8 @@ body, p {
 .service-img {
     width: 100px;
     display: flex;
-    justify-items: center;
-    align-content: center;
+    justify-items: center !important;
+    align-content: center !important;
 }
 
 .second-img {
@@ -230,4 +329,17 @@ body, p {
     width: 100%;
     vertical-align: middle;
     display: table-cell;
+}
+
+.second-head-text div h1 {
+    color: #393939 !important;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.second-head-text div p {
+    line-height: 1.5rem;
+    font-stretch: semi-condensed;
+    font-size: 15px;
 }
