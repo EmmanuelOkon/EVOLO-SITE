@@ -395,3 +395,42 @@ body, p {
     font-size: 15px;
     padding-bottom: 10px;
 }
+
+.third-img {
+    width: 100%;
+}
+
+.third-head-text {
+    height: 100%;
+    display: table;
+    margin-left: 40px;
+}
+
+.third-head-text div {
+    line-height: 25px;
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.third-head-text div h1 {
+    color: #393939 !important;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.list-item {
+    color: #626262;
+    line-height: 1.5rem;
+    /* font-stretch: semi-condensed; */
+    font-size: 14px;
+    /* padding-bottom: 10px; */
+}
+.third-head-text div ul {
+    padding-bottom: 15px;
+}
+
+.price p span {
+    color: #00BFD8;
+}
