@@ -431,6 +431,16 @@ body, p {
     padding-bottom: 15px;
 }
 
+.price-card {
+    height: 500px;
+    padding: 50px 30px;
+    border-radius: 6px;
+}
+
+.title, .price, button {
+    text-align: center;
+}
+
 .price p span {
     color: #00BFD8;
 }
