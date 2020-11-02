@@ -444,3 +444,7 @@ body, p {
 .price p span {
     color: #00BFD8;
 }
+
+.all {
+    column-gap: 12px !important;
+}
