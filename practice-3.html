@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,284 +9,313 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/83e2d6c4b1.js" crossorigin="anonymous"></script>
-
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/practice-3.css">
 
   <title>Practice 3 | Evolo</title>
-  </head>
+</head>
 
+<body data-spy="scroll" data-target=".navbar" data-offset="20" onload="myFunction()" style="margin:0;">
 
+  <div id="loader"></div>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="20">
-
-  <!-- <div class="loader_bg">
-    <div class="loader"></div> -->
-  <!-- <div class="loader"></div> -->
-  <!-- </div> -->
-
-  <!-- <div class="spinner-wrapper">
-    <div class="spinner">
-      <div class="bounce1"></div>
-      <div class="bounce2"></div>
-      <div class="bounce3"></div>
-    </div>
-  </div> -->
-  <section class="intro-head">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" width="100"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto text-center">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pricing">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#request">Request</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle dropbtn" href="#about" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Terms Conditions</a>
-              <hr class="line-break">
-              <a class="dropdown-item" href="#">Privacy Policy</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item icons text-center">
-            <a class="nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true" ::before></i></a>
-            <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true" ::before></i></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div id="home" class="first-head-div">
-      <div class="first-head">
-        <div class="container">
-          <div class="row">
-            <!-- FIRST-HEAD-TEXT -->
-            <div class="col-lg-6 col-md-12 col-xs-12">
-              <div class="first-head-text">
-                <div>
-                  <h1> <span>StartUp Landing</span> <br> Page Template Free</h1>
-                  <p>Use Evolo free landing page template to promote your business <br> startup and generate leads for
-                    the
-                    offered
-                    services</p>
-                  <!-- <a href="#" class="btn btn-primary">DISCOVER</a> -->
-                  <button type="send" class="send bg-color-dark" id="send">DISCOVER</button>
+  <section style="display:none;" id="myDiv" class="animate-bottom">
+    <section class="intro-head">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" width="100"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#request">Request</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle dropbtn" href="#about" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item one" href="#terms-conditions">Terms Conditions</a>
+                <hr class="line-break">
+                <a class="dropdown-item one" href="#privacy-policy">Privacy Policy</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item icons text-center">
+              <a class="nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true" ::before></i></a>
+              <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true" ::before></i></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="home" class="first-head-div">
+        <div class="first-head">
+          <div class="container">
+            <div class="row">
+              <!-- FIRST-HEAD-TEXT -->
+              <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="first-head-text">
+                  <div>
+                    <h1> <span>StartUp Landing</span> <br> Page Template Free</h1>
+                    <p>Use Evolo free landing page template to promote your business <br> startup and generate leads for
+                      the
+                      offered
+                      services</p>
+                    <!-- <a href="#" class="btn btn-primary">DISCOVER</a> -->
+                    <button type="send" class="send bg-color-dark" id="send">DISCOVER</button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- FIRST-HEAD-IMAGE -->
-            <div class="col-lg-6 col-md-12 col-xs-12">
-              <div class="first-head-img">
-                <img class="first-img" src="images/header-teamwork.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="services" class="services text-center">
-    <div class="container">
-      <div class="card-services text-center">
-        <h3 class="py-2">Business Growth Services</h3>
-        <P class="pb-5">We serve small and medium sized companies in all tech related industries with high <br> quality
-          growth services
-          which are presented below</P>
-      </div>
-    </div>
-    <div class="container text-center">
-      <div class="card-deck text-center">
-        <div class="card col-lg-4 col-md-4 col-xs-12 px-4 py-5 border-2 justify-content-center">
-          <div class="service-img">
-            <img class="img-fluid" src="images/services-icon-1.svg" alt="services-icon-1">
-          </div>
-          <div class="card-body">
-            <h4 class="py-3">Market Analysis</h4>
-            <p class="card-text">Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-              against the closest competitors</p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-md-4 col-xs-12 px-4 py-5 border-2">
-          <div class="service-img">
-            <img class="img-fluid" src="images/services-icon-2.svg" alt="services-icon-2">
-          </div>
-          <div class="card-body">
-            <h4 class="py-3">Opportunity Scan</h4>
-            <p class="card-text">Once the market analysis process is completed our staff will search for opportunities
-              that are in reach</p>
-          </div>
-        </div>
-        <div class="card col-lg-4 col-md-4 col-xs-12 px-4 py-5 border-2">
-          <div class="service-img">
-            <img class="img-fluid" src="images/services-icon-3.svg" alt="services-icon3">
-          </div>
-          <div class="card-body">
-            <h4 class="py-3">Action Plan</h4>
-            <p class="card-text">With all the information in place you will be presented with an action plan that your
-              company needs to follow</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="second-head-div py-5">
-      <div class="second-head">
-        <div class="container">
-          <div class="row">
-            <!-- SECOND-HEAD-TEXT -->
-            <div class="col-lg-6 col-md-12 col-xs-12">
-              <div class="second-head-text">
-                <div>
-                  <h1>Design And Plan Your <br> Business Growth Steps</h1>
-                  <p>Use our staff and our expertise to design and plan your business growth strategy. Evolo team is
-                    eager to advise you on the best opportunities that you should look into</p>
-                  <!-- <a href="#" class="btn btn-primary">DISCOVER</a> -->
-                  <button type="send" class="send bg-color-dark" id="send">LIGHTBOX</button>
-                </div>
-              </div>
-            </div>
-            <!-- SECOND-HEAD-IMAGE -->
-            <div class="col-lg-6 col-md-12 col-xs-12">
-              <div class="second-head-img">
-                <img class="second-img" src="images/details-1-office-worker.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="third-head-div py-5">
-      <div class="third-head">
-        <div class="container">
-          <div class="row">
-            <!-- THIRD-HEAD-IMAGE -->
-            <div class="col-lg-6 col-md-12 col-xs-12">
-              <div class="third-head-img">
-                <img class="third-img" src="images/details-2-office-team-work.svg" alt="">
-              </div>
-            </div>
-            <!-- THIRD-HEAD-TEXT -->
-            <div class="col-lg-6 col-md-12 col-xs-12">
-              <div class="third-head-text">
-                <div>
-                  <h1>Search For Optimization <br> Wherever Is Possible</h1>
-                  <ul class="list-unstyled">
-                    <li class="list-item"><i class="fa fa-check" aria-hidden="true"></i>Basically we'll teach you step
-                      by step what you need to do</li>
-                    <li class="list-item"><i class="fa fa-check" aria-hidden="true"></i>In order to develop your company
-                      and reach new heights</li>
-                    <li class="list-item"><i class="fa fa-check" aria-hidden="true"></i>Everyone will be pleased from
-                      stakeholders to employees</li>
-                  </ul>
-                  <button type="send" class="send bg-color-dark" id="send">LIGHTBOX</button>
+              <!-- FIRST-HEAD-IMAGE -->
+              <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="first-head-img">
+                  <img class="first-img" src="images/header-teamwork.svg" alt="">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="pricing-section bg-gray py-5">
-    <div class="container">
-      <div class="pricing-head text-center">
-        <h1 class="pricing-title">Multiple Pricing Options</h1>
-        <p>We've prepared pricing plans for all budgets so you can get started right away. They're great for small
-          companies and large organizations
-        </p>
-      </div>
-    </div>
-    <!-- pricing card begin -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-xs-12 all ">
-          <div class="card price-card border-3">
-            <div class="title">
-              <h3>STARTER</h3>
-              <p>Just to see what can be achieved</p>
-            </div>
-            <hr class="price-linebreak">
-            <div class="price">
-              <p><span class="dollar">$</span> <span class="amount">199 </span> <br>monthly </p>
-            </div>
-            <hr class="price-linebreak">
-            <ul class="list-unstyled">
-              <li>Improve Your Email Marketing</li>
-              <li>User And Admin Rights Control</li>
-              <li>Lists Building And Cleaning</li>
-              <li>Collected Data Management</li>
-              <li>More Planning And Evaluation</li>
-            </ul>
-            <button class="btn btn-price">REQUEST</button>
+    </section>
+
+    <section class="trusted text-center">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class=" w-20" src="images/customer-logo-1.png" alt="First slide">
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12">
-          <div class="card price-card border-3">
-            <div class="title">
-              <h3>MEDIUM</h3>
-              <p>Very Appropriate for the short term</p>
-            </div>
-            <hr class="price-linebreak">
-            <div class="price">
-              <p><span class="dollar">$</span> <span class="amount">299 </span> <br>monthly </p>
-            </div>
-            <hr class="price-linebreak">
-            <ul class="list-unstyled">
-              <li>Improve Your Email Marketing</li>
-              <li>User And Admin Rights Control</li>
-              <li>Lists Building And Cleaning</li>
-              <li>Collected Data Management</li>
-              <li>More Planning And Evaluation</li>
-            </ul>
-            <button class="btn btn-price">REQUEST</button>
+          <div class="carousel-item">
+            <img class=" w-20" src="images/customer-logo-2.png" alt="Second slide">
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12">
-          <div class="card price-card border-3">
-            <div class="title">
-              <h3>COMPLETE</h3>
-              <p>Must have for large companies</p>
-            </div>
-            <hr class="price-linebreak">
-            <div class="price">
-              <p><span class="dollar">$</span> <span class="amount">399 </span> <br>monthly </p>
-            </div>
-            <hr class="price-linebreak">
-            <ul class="list-unstyled">
-              <li>Improve Your Email Marketing</li>
-              <li>User And Admin Rights Control</li>
-              <li>Lists Building And Cleaning</li>
-              <li>Collected Data Management</li>
-              <li>More Planning And Evaluation</li>
-            </ul>
-            <button class="btn btn-price">REQUEST</button>
+          <div class="carousel-item">
+            <img class=" w-20" src="images/customer-logo-3.png" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class=" w-20" src="images/customer-logo-4.png" alt="Fourth slide">
+          </div>
+          <div class="carousel-item">
+            <img class=" w-20" src="images/customer-logo-5.png" alt="Fifth slide">
+          </div>
+          <div class="carousel-item">
+            <img class=" w-20" src="images/customer-logo-6.png" alt="Sixth slide">
           </div>
         </div>
       </div>
-    </div>
-    <!-- pricing card ends -->
+    </section>
+
+    <section id="services" class="services text-center">
+      <div class="container">
+        <div class="card-services text-center">
+          <h3 class="py-2">Business Growth Services</h3>
+          <P class="pb-5">We serve small and medium sized companies in all tech related industries with high <br>
+            quality
+            growth services
+            which are presented below</P>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="card-deck text-center">
+          <div class="card col-lg-4 col-md-4 col-xs-12 px-4 py-5 border-2 justify-content-center">
+            <div class="service-img">
+              <img class="img-fluid" src="images/services-icon-1.svg" alt="services-icon-1">
+            </div>
+            <div class="card-body">
+              <h4 class="py-3">Market Analysis</h4>
+              <p class="card-text">Our team of enthusiastic marketers will analyse and evaluate how your company stacks
+                against the closest competitors</p>
+            </div>
+          </div>
+          <div class="card col-lg-4 col-md-4 col-xs-12 px-4 py-5 border-2">
+            <div class="service-img">
+              <img class="img-fluid" src="images/services-icon-2.svg" alt="services-icon-2">
+            </div>
+            <div class="card-body">
+              <h4 class="py-3">Opportunity Scan</h4>
+              <p class="card-text">Once the market analysis process is completed our staff will search for opportunities
+                that are in reach</p>
+            </div>
+          </div>
+          <div class="card col-lg-4 col-md-4 col-xs-12 px-4 py-5 border-2">
+            <div class="service-img">
+              <img class="img-fluid" src="images/services-icon-3.svg" alt="services-icon3">
+            </div>
+            <div class="card-body">
+              <h4 class="py-3">Action Plan</h4>
+              <p class="card-text">With all the information in place you will be presented with an action plan that your
+                company needs to follow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="second-head-div py-5">
+        <div class="second-head">
+          <div class="container">
+            <div class="row">
+              <!-- SECOND-HEAD-TEXT -->
+              <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="second-head-text">
+                  <div>
+                    <h1>Design And Plan Your <br> Business Growth Steps</h1>
+                    <p>Use our staff and our expertise to design and plan your business growth strategy. Evolo team is
+                      eager to advise you on the best opportunities that you should look into</p>
+                    <!-- <a href="#" class="btn btn-primary">DISCOVER</a> -->
+                    <button type="send" class="send bg-color-dark" id="send">LIGHTBOX</button>
+                  </div>
+                </div>
+              </div>
+              <!-- SECOND-HEAD-IMAGE -->
+              <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="second-head-img">
+                  <img class="second-img" src="images/details-1-office-worker.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="third-head-div py-5">
+        <div class="third-head">
+          <div class="container">
+            <div class="row">
+              <!-- THIRD-HEAD-IMAGE -->
+              <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="third-head-img">
+                  <img class="third-img" src="images/details-2-office-team-work.svg" alt="">
+                </div>
+              </div>
+              <!-- THIRD-HEAD-TEXT -->
+              <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="third-head-text">
+                  <div>
+                    <h1>Search For Optimization <br> Wherever Is Possible</h1>
+                    <ul class="list-unstyled">
+                      <li class="list-item"><i class="fa fa-check" aria-hidden="true"></i>Basically we'll teach you step
+                        by step what you need to do</li>
+                      <li class="list-item"><i class="fa fa-check" aria-hidden="true"></i>In order to develop your
+                        company
+                        and reach new heights</li>
+                      <li class="list-item"><i class="fa fa-check" aria-hidden="true"></i>Everyone will be pleased from
+                        stakeholders to employees</li>
+                    </ul>
+                    <button type="send" class="send bg-color-dark" id="send">LIGHTBOX</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing-section bg-gray py-5">
+      <div class="container">
+        <div class="pricing-head text-center">
+          <h1 class="pricing-title">Multiple Pricing Options</h1>
+          <p>We've prepared pricing plans for all budgets so you can get started right away. They're great for small
+            companies and large organizations
+          </p>
+        </div>
+      </div>
+      <!-- pricing card begin -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-xs-12 all ">
+            <div class="card price-card border-3">
+              <div class="title">
+                <h3>STARTER</h3>
+                <p>Just to see what can be achieved</p>
+              </div>
+              <hr class="price-linebreak">
+              <div class="price">
+                <p><span class="dollar">$</span> <span class="amount">199 </span> <br>monthly </p>
+              </div>
+              <hr class="price-linebreak">
+              <ul class="list-unstyled">
+                <li>Improve Your Email Marketing</li>
+                <li>User And Admin Rights Control</li>
+                <li>Lists Building And Cleaning</li>
+                <li>Collected Data Management</li>
+                <li>More Planning And Evaluation</li>
+              </ul>
+              <button class="btn btn-price">REQUEST</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card price-card border-3">
+              <div class="title">
+                <h3>MEDIUM</h3>
+                <p>Very Appropriate for the short term</p>
+              </div>
+              <hr class="price-linebreak">
+              <div class="price">
+                <p><span class="dollar">$</span> <span class="amount">299 </span> <br>monthly </p>
+              </div>
+              <hr class="price-linebreak">
+              <ul class="list-unstyled">
+                <li>Improve Your Email Marketing</li>
+                <li>User And Admin Rights Control</li>
+                <li>Lists Building And Cleaning</li>
+                <li>Collected Data Management</li>
+                <li>More Planning And Evaluation</li>
+              </ul>
+              <button class="btn btn-price">REQUEST</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card price-card border-3">
+              <div class="title">
+                <h3>COMPLETE</h3>
+                <p>Must have for large companies</p>
+              </div>
+              <hr class="price-linebreak">
+              <div class="price">
+                <p><span class="dollar">$</span> <span class="amount">399 </span> <br>monthly </p>
+              </div>
+              <hr class="price-linebreak">
+              <ul class="list-unstyled">
+                <li>Improve Your Email Marketing</li>
+                <li>User And Admin Rights Control</li>
+                <li>Lists Building And Cleaning</li>
+                <li>Collected Data Management</li>
+                <li>More Planning And Evaluation</li>
+              </ul>
+              <button class="btn btn-price">REQUEST</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- pricing card ends -->
+    </section>
+
+    <section>
+
+      <h2>Animated Button</h2>
+
+      <button class="button"><span>Hover </span></button>
+
+    </section>
   </section>
+
+
+  <script src="js/style.js"></script>
+
+
 
 
 
@@ -307,10 +336,7 @@
     }, 1500);
 
   </script> -->
-  <!-- <script src="js/style.js"></script> -->
-  <script>
 
-  </script>
 
 </body>
 
