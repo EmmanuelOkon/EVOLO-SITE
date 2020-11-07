@@ -47,7 +47,6 @@
   
 #myDiv {
     display: none;
-    text-align: center;
 }
 
 /* PRELOADER-ENDS */
@@ -89,6 +88,7 @@ body, p {
 .navbar-brand {
     padding-top: 20px;
     padding-left: 50px;
+    width: 8.5em !important;
 }
 
 .navbar-nav > li {
@@ -97,6 +97,11 @@ body, p {
 
 .nav-link {
     color: #FFF !important;
+    font-size: 15px;
+}
+
+.one {
+    padding: 10px 30px;
     font-size: 15px;
 }
 
@@ -114,12 +119,12 @@ body, p {
 }
 
 .dropdown-menu a {
-    color: #393939;
     text-decoration: none;
     display: block;
     text-align: left;
     justify-content: center !important;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500 !important;
 }
 
 .dropdown-menu a:hover {
@@ -130,11 +135,7 @@ body, p {
 }
 
 .line-break {
-    margin: 0px 10px;
-}
-
-.one {
-    padding: 10px 30px;
+    margin: 0px 16px;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -142,15 +143,18 @@ body, p {
     background-color: #FFF !important;
 }
 
+.icons {
+
+}
+
 .icons a {
     color: #FFF !important;
     background: #00BFD8;
-    width: 32px;
-    height: 32px;
-    /* line-height: auto; */
+    width: 25px;
+    height: 25px;
     display: inline-block;
     text-align: center !important;
-    border-radius: 100%;
+    border-radius: 50%;
     font-size: 15px;
     margin: 3px 3px;
 }
@@ -169,13 +173,23 @@ body, p {
     background-size: cover;
 }
 
+.trusted {
+    /* width: 100%; */
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
 .carousel-inner {
-    width: 100%;
-    background-size: cover;
-    margin: 0px 80px;
-    
+    display: inline-flex;
     background-color: #F1F1F1;
     height: 18vh;
+}
+
+.trusted-slides {
+    /* width: 100px; */
+    text-align: center;
+    vertical-align: middle;
 }
 
 .container {
@@ -376,6 +390,7 @@ body, p {
 .all {
     column-gap: 12px !important;
 }
+
 
 
 

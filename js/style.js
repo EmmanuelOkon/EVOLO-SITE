@@ -1,23 +1,7 @@
-// (function ($) {
-//   "use strict";
-
-//   $(window).on('load', function () {
-//     var preloaderFadeOutTime = 500;
-//     function hidePreloader() {
-//       var preloader = $('.spinner-wrapper');
-//       setTimeout(function () {
-//         preloader.fadeOut(preloaderFadeOutTime);
-//       }, 500);
-//     }
-//     hidePreloader();
-//   });
-// }
-// )
-
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 1500);
+  myVar = setTimeout(showPage, 10);
 }
 
 function showPage() {
