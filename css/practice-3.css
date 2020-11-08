@@ -143,10 +143,6 @@ body, p {
     background-color: #FFF !important;
 }
 
-.icons {
-
-}
-
 .icons a {
     color: #FFF !important;
     background: #00BFD8;
@@ -269,6 +265,11 @@ body, p {
 
 .card {
     height: 350px;
+}
+
+.pic {
+    width: 100px !important;
+
 }
 
 .card-services h3 {
