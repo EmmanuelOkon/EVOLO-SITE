@@ -67,7 +67,7 @@ h1, h2, h3, h4 {
 }
 
 body, p {
-    color: #626262;
+    color: #626262 !important;
     font: 400;
 }
 
@@ -159,6 +159,10 @@ body, p {
     background-color: #00BFD8 !important;
     color: #FFF !important;
     border-radius: 25px !important;
+}
+
+.btn:hover {
+    outline: hidden;
 }
 
 .intro-head {
@@ -254,6 +258,7 @@ body, p {
 }
 
 #send:hover {
+    text-decoration: none;
     color: #00BFD8;
     background-color: #FFF;
     border: 2px solid;
@@ -263,13 +268,10 @@ body, p {
     padding: 60px 0px;
 }
 
-.card {
-    height: 350px;
-}
+
 
 .pic {
-    width: 100px !important;
-
+    width: 98px !important;
 }
 
 .card-services h3 {
@@ -279,9 +281,10 @@ body, p {
     padding-bottom: 10px;
 }
 
-.card-body {
-    width: 100%;
+.card {
+    border-radius: 8px !important;
 }
+
 
 .card-body h4 {
     font-size: 22px;
@@ -290,23 +293,11 @@ body, p {
 }
 
 .card-body p {
-    /* word-spacing: 0.1rem; */
+    font-size: 15px;
+    word-spacing: 0.1rem;
     line-height: 1.5rem;
-    font-stretch: ultra-condensed;
 }
 
-/* .card img {
-    display: flex !important;
-    align-items: center !important;
-    justify-items: center !important;    
-} */
-
-.service-img {
-    width: 100px;
-    display: flex;
-    justify-items: center !important;
-    align-content: center !important;
-}
 
 .second-img {
     width: 100%;
