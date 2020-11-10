@@ -245,19 +245,19 @@ body, p {
 }
 
 .first-head-text div p {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .send {
     color: #FFF;
-    font-size: 80%;
-    font-weight: bolder;
+    font-size: 12px !important;
+    font-weight: 700;
 }
 
 #send {
     background-color: #00BFD8;
     border-radius: 50px;
-    padding: 12px 35px;
+    padding: 15px 40px;
     border-style: none;
 }
 
@@ -272,17 +272,15 @@ body, p {
     padding: 60px 0px;
 }
 
+.card-deck {
+    grid-gap: 20px;
+}
+
 .card-body img {
     width: 100px !important;
     padding-top: 40px;
 }
 
-
-
-.pic {
-    /* width: 98px !important; */
-    /* padding-top: 30px; */
-}
 
 .card-services h3 {
     color: #393939;
@@ -304,7 +302,7 @@ body, p {
 .card-body h4 {
     color: #393939 !important;
     font-size: 22px;
-    padding-top: 40px;
+    padding-top: 30px;
     /* font-weight: 700; */
     padding-bottom: 10px !important;
 }
@@ -315,15 +313,15 @@ body, p {
     line-height: 1.5rem;
     /* width: fit-content !important; */
     writing-mode: horizontal-tb;
-    /* word-spacing: 1.2ex; */
+    padding-bottom: 30px;
 }
-
 
 
 
 .second-img {
     width: 100%;
     margin-left: 40px;
+    padding-right: 50px;
 }
 
 .second-head-text {
@@ -342,14 +340,14 @@ body, p {
     color: #393939 !important;
     font-size: 36px;
     font-weight: 700;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .second-head-text div p {
     line-height: 1.5rem;
     font-stretch: semi-condensed;
     font-size: 15px;
-    padding-bottom: 10px;
+    padding: 20px 0px;
 }
 
 .third-img {
@@ -387,13 +385,28 @@ body, p {
     padding-bottom: 15px;
 }
 
-.price-card {
-    height: 500px;
-    padding: 50px 30px;
-    border-radius: 6px;
+.card-holder {
+    display: flex;
+    grid-gap: 20px;
 }
 
-.title, .price, button {
+.pricing-head h3 {
+    color: #393939;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.pricing-head p {
+    font-size: 17px;
+}
+
+.price-card {
+    padding: 50px 30px;
+    border-radius: 8px;
+}
+
+.title, .price {
     text-align: center;
 }
 
@@ -401,10 +414,33 @@ body, p {
     color: #00BFD8;
 }
 
-.all {
-    column-gap: 12px !important;
+
+
+.amount {
+    font-size: 50px;
+    font-weight: 700;
 }
 
+.req {
+    color: #FFF;
+    font-size: 14px !important;
+    font-weight: 700;
+}
+
+#req {
+    background-color: #00BFD8;
+    border-radius: 50px;
+    padding: 12px 40px;
+    border-style: none;
+    width: min-content;
+}
+
+#req:hover {
+    text-decoration: none;
+    color: #00BFD8;
+    background-color: #FFF;
+    border: 2px solid;
+}
 
 
 
