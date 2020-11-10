@@ -272,10 +272,16 @@ body, p {
     padding: 60px 0px;
 }
 
+.card-body img {
+    width: 100px !important;
+    padding-top: 40px;
+}
+
 
 
 .pic {
-    width: 98px !important;
+    /* width: 98px !important; */
+    /* padding-top: 30px; */
 }
 
 .card-services h3 {
@@ -285,14 +291,21 @@ body, p {
     padding-bottom: 10px;
 }
 
+.card-services p {
+    font-size: 17px;
+}
+
 .card {
     border-radius: 8px !important;
 }
 
 
+
 .card-body h4 {
+    color: #393939 !important;
     font-size: 22px;
-    font-weight: 700;
+    padding-top: 40px;
+    /* font-weight: 700; */
     padding-bottom: 10px !important;
 }
 
