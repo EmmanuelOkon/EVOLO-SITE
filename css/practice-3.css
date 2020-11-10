@@ -443,8 +443,20 @@ body, p {
 }
 
 .section-padding {
-    padding: 60px 0px;
+    padding: 80px 0px;
     background-color: #F9FAFC;
+}
+
+.request-row {
+    padding: 0px 50px;
+}
+
+.request-left {
+    width: 100%;
+}
+
+.request-right {
+    width: 100%;
 }
 
 
