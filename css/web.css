@@ -643,6 +643,7 @@ input[type='checkbox'] {
 	height: 2rem;
 	margin-bottom: 1px;
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -1007,7 +1008,8 @@ input[type='checkbox'] {
 	margin-left: auto;
 	border: 1px solid #c4d8dc;
 	border-radius: 0.5rem;
-	vertical-align: top;
+	/* vertical-align: top; */
+
 }
 
 .cards-2 .card .card-body {
