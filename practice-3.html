@@ -321,7 +321,7 @@
       <!-- pricing card ends -->
     </section>
 
-    <section class="section-padding" id="request">
+    <section class="section-padding form-1" id="request">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -331,62 +331,71 @@
                 Discover
                 what it can do for your <br> business organization right away.</p>
               <ul class="list-unstyled li-space-lg">
-                <li class="request-list"><i class="fa fa-check" aria-hidden="true"></i> <span>Automate your
-                    marketing</span> activities and get results today</li>
-                <li class="request-list"><i class="fa fa-check" aria-hidden="true"></i> <span>Interact with all
-                    your</span> targeted customers at a personal level</li>
-                <li class="request-list"><i class="fa fa-check" aria-hidden="true"></i> <span>Convince them to
-                    buy</span> your company's awesome product</li>
-                <li class="request-list"><i class="fa fa-check" aria-hidden="true"></i> <span>Save precious
-                    time</span> and invest it where you need it the most</li>
-              </ul>
+                <li class="media"><i class="fa fa-check" aria-hidden="true">
+                    <div class="media-body">
+                  </i> <strong class="blue">Automate your
+                    marketing</strong> activities and get results today
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="form-container">
-              <form class="requestForm" data-toggle="validator" data-focus="false" novalidate="true" action="">
-                <div class="form-group">
-                  <input type="text" class="form-control-input" id="rname" name="rname" required>
-                  <label class="label-control" for="rname">Full name</label>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control-input" id="remail" name="remail" required>
-                  <label class="label-control" for="remail">Email</label>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control-input" id="rphone" name="rphone" required>
-                  <label class="label-control" for="rphone">Phone</label>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group">
-                  <select id="" class="form-control">
-                    <option class="disabled">Interested in...</option>
-                    <option>Starter</option>
-                    <option>Medium</option>
-                    <option>Complete</option>
-                  </select>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <p> I agree with Evolo's stated <a href="">Privacy Policy</a> and <a href="">Terms &
-                          Conditions</a></p>
-                    </label>
-                  </div>
-                </div>
-                <!-- <a href="" type="send" class="send btn-primary" id="send">REQUEST</a> -->
-                <div class="submit-button col-md-12">
-                  <button class="btn btn-common col-md-12" id="form-submit" type="submit"
-                    style="pointer-events: all; cursor: pointer;">REQUEST</button>
-                </div>
-
-              </form>
-            </div>
+            </li>
+            <li class="media"><i class="fa fa-check" aria-hidden="true"></i>
+              <div class="media-body"> <strong class="blue">Interact with all
+                  your</strong> targeted customers at a personal level</div>
+            </li>
+            <li class="media"><i class="fa fa-check" aria-hidden="true"></i>
+              <div class="media-body"> <strong class="blue">Convince them to
+                  buy</strong> your company's awesome product</div>
+            </li>
+            <li class="media"><i class="fa fa-check" aria-hidden="true"></i>
+              <div class="media-body"> <strong class="blue">Save precious
+                  time</strong> and invest it where you need it the most</div>
+            </li>
+            </ul>
           </div>
         </div>
+        <div class="col-lg-6">
+          <div class="form-container">
+            <form class="requestForm" data-toggle="validator" data-focus="false" novalidate="true" action="">
+              <div class="form-group">
+                <input type="text" class="form-control-input" id="rname" name="rname" required>
+                <label class="label-control" for="rname">Full name</label>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control-input" id="remail" name="remail" required>
+                <label class="label-control" for="remail">Email</label>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
+                <label class="label-control" for="rphone">Phone</label>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <select id="rselect" class="form-control-select" required>
+                  <option class="select-option" value="disabled selected">Interested in...</option>
+                  <option class="select-option" value="Personal Loan">Starter</option>
+                  <option class="select-option" value="Car Loan">Medium</option>
+                  <option class="select-option" value="House Loan">Complete</option>
+                </select>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group checkbox">
+                <input type="checkbox" name="rterms" id="rterms" value="Agreed-To-Terms" required>I agree with Evolo's
+                stated <a href="">Privacy Policy</a> and <a href="">Terms &
+                  Conditions</a>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <button class="form-control-submit-button disabled" type="submit">REQUEST</button>
+              </div>
+              <div class="form-message">
+                <div id="rmsgSubmit"></div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
 

@@ -57,7 +57,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -72,9 +72,6 @@ body, p {
     font-family: 'Raleway', sans-serif;
 }
 
-.fa-check {
-    color: #00BFD8 !important;
-}
 
 .navbar-fixed-top.scrolled {
     background-color: #00BFD8 !important;
@@ -384,6 +381,7 @@ body, p {
     font-size: 14px;
     /* padding-bottom: 10px; */
 }
+
 .third-head-text div ul {
     padding-bottom: 15px;
 }
@@ -450,9 +448,14 @@ body, p {
     border: 2px solid;
 }
 
-.section-padding {
-    padding: 80px 0px;
+.form-1 {
+    padding-bottom: 6.25rem;
     background-color: #F9FAFC;
+}
+
+.form-1 .text-container {
+    margin-right: 1.5rem;
+    margin-left: 6rem;
 }
 
 
@@ -462,13 +465,44 @@ body, p {
 	margin-bottom: 0.25rem;
 }
 
-.request-list span {
-    font-weight: 700;
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-1 .list-unstyled .fa-check {
+    color: #00BFD8;
+    line-height: 1.375rem;
+}
+
+.form-1 .list-unstyled .media-body {
+    margin-left: 0.625rem;
+}
+
+.media-body {
+    flex: 1;
+}
+
+strong {
+    font-weight: bolder;
 }
 
 .form-check > .form-check-label > p > a {
     color: #626262;
     text-decoration: underline;
+}
+
+.form-1 h2 {
+    margin-bottom: 1.25rem;
+}
+
+.form-1 .list-unstyled {
+    margin-top: 1.375rem
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
 }
 
 .form-group {
@@ -506,18 +540,48 @@ body, p {
 
 
 
+@media (min-width: 1200px) {
 
-
-
-
-@media (min-width: 992px) {
-    .form-container {
-        margin-left: 1.75rem;
-    }
+    .form-1 .text-container {
+		margin-right: 1.5rem;
+		margin-left: 6rem;
+	}
 }
 
 
 
+@media (min-width: 992px) {
+
+    .container {
+        /* max-width: 960px; */
+    }
+
+    .form-container {
+        margin-left: 1.75rem;
+    }
+
+    .form-1 {
+		padding-top: 7.5rem;
+	}
+
+	.form-1 .text-container {
+		margin-top: 1.5rem;
+		margin-bottom: 0;
+	}
+
+
+
+    
+}
+
+
+
+
+@media (min-width: 768px) {
+
+
+
+}
 
 
 
