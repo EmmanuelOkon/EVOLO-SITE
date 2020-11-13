@@ -6,7 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/83e2d6c4b1.js" crossorigin="anonymous"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -145,9 +146,8 @@
             <div class="card-body">
               <img class="pic" src="images/services-icon-1.svg" alt="">
               <h4 class="">Market Analysis</h4>
-              <p class="card-text w-80">Our team of enthusiastic marketers will analyse and evaluate how your company
-                stacks
-                against the closest competitors</p>
+              <p class="card-text w-100">Our team of enthusiastic marketers will <br> analyse and evaluate how your
+                company stacks against the closest competitors</p>
             </div>
           </div>
           <div class="card col-lg-4 col-md-12 col-xs-12 text-center" style="width: 20rem;">
@@ -216,7 +216,8 @@
                   <div>
                     <h1>Search For Optimization <br> Wherever Is Possible</h1>
                     <ul class="list-unstyled">
-                      <li class="list-item"><i class="fa fa-check" aria-hidden="true"></i> Basically we'll teach you step
+                      <li class="list-item"><i class="fa fa-check" aria-hidden="true"></i> Basically we'll teach you
+                        step
                         by step what you need to do</li>
                       <li class="list-item"><i class="fa fa-check" aria-hidden="true"></i> In order to develop your
                         company
@@ -233,7 +234,7 @@
         </div>
       </div>
     </section>
-    <section class="pricing-section py-5">
+    <section class="pricing-section py-5" id="pricing">
       <div class="container">
         <div class="pricing-head text-center">
           <h1 class="py-2">Multiple Pricing Options</h1>
@@ -322,16 +323,14 @@
 
     <section class="section-padding" id="request">
       <div class="container">
-        <div class="row request-row">
-          <div class="col-lg-6 col-md-6 col-sm-12 pl-5 request-left">
-            <div class="request-form">
-              <div class="request-title">
-                <h1>Fill The Following Form <br> To Request A Meeting</h1>
-                <p>Evolo is one of the easiest and feature packed marketing <br> automation apps in the market.
-                  Discover
-                  what it can do for your <br> business organization right away.</p>
-              </div>
-              <ul class="list-unstyled">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="text-container">
+              <h2>Fill The Following Form To Request A Meeting</h2>
+              <p>Evolo is one of the easiest and feature packed marketing <br> automation apps in the market.
+                Discover
+                what it can do for your <br> business organization right away.</p>
+              <ul class="list-unstyled li-space-lg">
                 <li class="request-list"><i class="fa fa-check" aria-hidden="true"></i> <span>Automate your
                     marketing</span> activities and get results today</li>
                 <li class="request-list"><i class="fa fa-check" aria-hidden="true"></i> <span>Interact with all
@@ -343,53 +342,47 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 pr-5 request-right">
-            <div class="request-details">
-              <form class="request-details-form" action="">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="name" placeholder="Full name" required>
-                      <div class="help-block with errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="text" placeholder="Phone" class="form-control" required>
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <select id="" class="form-control">
-                        <option class="disabled">Interested in...</option>
-                        <option>Starter</option>
-                        <option>Medium</option>
-                        <option>Complete</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" value="">
-                        <p> I agree with Evolo's stated <a href="">Privacy Policy</a> and <a href="">Terms &
-                            Conditions</a></p>
-                      </label>
-                    </div>
-                  </div>
-                  <!-- <a href="" type="send" class="send btn-primary" id="send">REQUEST</a> -->
-                  <div class="submit-button col-md-12">
-                    <button class="btn btn-common col-md-12" id="form-submit" type="submit"
-                      style="pointer-events: all; cursor: pointer;">REQUEST</button>
-                  </div>
-
+          <div class="col-lg-6">
+            <div class="form-container">
+              <form class="requestForm" data-toggle="validator" data-focus="false" novalidate="true" action="">
+                <div class="form-group">
+                  <input type="text" class="form-control-input" id="rname" name="rname" required>
+                  <label class="label-control" for="rname">Full name</label>
+                  <div class="help-block with-errors"></div>
                 </div>
+                <div class="form-group">
+                  <input type="email" class="form-control-input" id="remail" name="remail" required>
+                  <label class="label-control" for="remail">Email</label>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control-input" id="rphone" name="rphone" required>
+                  <label class="label-control" for="rphone">Phone</label>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <select id="" class="form-control">
+                    <option class="disabled">Interested in...</option>
+                    <option>Starter</option>
+                    <option>Medium</option>
+                    <option>Complete</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <p> I agree with Evolo's stated <a href="">Privacy Policy</a> and <a href="">Terms &
+                          Conditions</a></p>
+                    </label>
+                  </div>
+                </div>
+                <!-- <a href="" type="send" class="send btn-primary" id="send">REQUEST</a> -->
+                <div class="submit-button col-md-12">
+                  <button class="btn btn-common col-md-12" id="form-submit" type="submit"
+                    style="pointer-events: all; cursor: pointer;">REQUEST</button>
+                </div>
+
               </form>
             </div>
           </div>

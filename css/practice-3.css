@@ -73,7 +73,7 @@ body, p {
 }
 
 .fa-check {
-    color: #00BFD8;
+    color: #00BFD8 !important;
 }
 
 .navbar-fixed-top.scrolled {
@@ -305,17 +305,18 @@ body, p {
     color: #393939 !important;
     font-size: 22px;
     padding-top: 30px;
-    /* font-weight: 700; */
+    font-weight: 700;
     padding-bottom: 10px !important;
 }
 
 .card-body p {
     font-size: 14px;
-    word-spacing: 0.1rem;
-    line-height: 1.5rem;
+
+    /* word-spacing: 0.1rem; */
+    /* line-height: 1.5rem; */
     /* width: fit-content !important; */
-    writing-mode: horizontal-tb;
-    padding-bottom: 30px;
+    /* writing-mode: horizontal-tb; */
+    padding-bottom: 20px;
 }
 
 
@@ -392,7 +393,7 @@ body, p {
     grid-gap: 20px;
 }
 
-.pricing-head h3 {
+.pricing-head h1 {
     color: #393939;
     font-size: 36px;
     font-weight: 700;
@@ -406,6 +407,11 @@ body, p {
 .price-card {
     padding: 50px 30px;
     border-radius: 8px;
+}
+
+.price-card .title h3 {
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .title, .price {
@@ -449,18 +455,12 @@ body, p {
     background-color: #F9FAFC;
 }
 
-.request-row {
-    padding: 0px 50px;
-}
 
-.request-left {
-    width: 100%;
-}
 
-.request-right {
-    width: 100%;
-}
 
+.li-space-lg li {
+	margin-bottom: 0.25rem;
+}
 
 .request-list span {
     font-weight: 700;
@@ -470,6 +470,66 @@ body, p {
     color: #626262;
     text-decoration: underline;
 }
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.form-control-input, .form-control-select {
+    display: block;
+    width: 100%;
+    padding-top: 1.0625rem;
+    padding-bottom: 0.0625rem;
+    padding-left: 1.3125rem;
+    border: 1px solid #C4D8DC;
+    border-radius: 0.25rem;
+    background-color: #FFF;
+    color: #626262;
+    font: 400;
+}
+
+/* .form-control {
+    padding: 25px 20px;
+} */
+
+/* .form-control-select {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    width: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .form-container {
+        margin-left: 1.75rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .button {
