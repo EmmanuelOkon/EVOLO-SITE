@@ -21,16 +21,17 @@ body, p {
 }
 
 .navbar {
+    width: 100%;
+    height: 60px;
     display: flex;
-    align-self: space-between;
+    align-items: center;
+    padding: 0 60px;
     background-image: url(/images/header-background.jpg);
-    /* width: 100%; */
-    /* height: 100vh !important; */
-    /* background-repeat: no-repeat; */
 }
 
 .logo {
-    width: 60px;
+    width: 120px;
+    cursor: pointer;
 }
 
 .nav-links ul {
@@ -39,3 +40,9 @@ body, p {
     align-content:flex-end;
 }
 
+.nav-links > ul > li > a {
+    list-style: none;
+    display: inline-block;
+    /* padding-right: 20px; */
+    /* margin-right: 60px; */
+}
