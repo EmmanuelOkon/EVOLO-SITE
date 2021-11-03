@@ -18,3 +18,12 @@ html {
   scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
 }
+
+body{
+  overflow-x: hidden;
+  background: gray;
+}
+
+section{
+  padding: 2rem 9%;
+}
