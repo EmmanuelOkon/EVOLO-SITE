@@ -13,3 +13,13 @@ window.onscroll = () => {
 };
 
 // Hamburger Menu ends
+
+window.onscroll = () => {
+    navbar.classList.remove('active');
+  
+    if (window.scrollY > 50) {
+      document.querySelector('.header').classList.add('active');
+    } else {
+      document.querySelector('.header').classList.remove('active');
+    }
+  };
