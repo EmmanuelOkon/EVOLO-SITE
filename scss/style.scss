@@ -7,7 +7,7 @@
     position: fixed;
     top:0; left:0; right:0;
     z-index: 1000;
-    padding: 4rem 9%;
+    padding: 4rem 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,6 +30,7 @@
             color: $white;
             margin: 0 1rem;
             font-weight: 600;
+            text-transform: capitalize;
 
             & i {
                 font-size: 1.2rem;
@@ -59,7 +60,8 @@
 
     &.active {
         background: $white;
-        padding: 1.5rem 9%;
+        // padding: 1.5rem 9%;
+        padding: 2rem 7%;
         box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
 
         & .logo {

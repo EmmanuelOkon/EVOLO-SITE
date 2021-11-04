@@ -6,3 +6,19 @@ $light-color: #777;
 $border: 0.2rem solid $blue;
 $white: #FFF;
 $text: #626262;
+
+
+.btn {
+    color: $white;
+    background: $blue;
+    padding: 1.3rem 3.4rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    outline: none;
+    border: 0.2rem solid $blue;
+
+    &:hover {
+        background: $white;
+        color: $blue;
+    }
+}
