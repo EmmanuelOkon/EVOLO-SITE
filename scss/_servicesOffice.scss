@@ -1,0 +1,136 @@
+.servicesOffice {
+  background-size: cover !important;
+  background-position: center !important;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding-top: 10rem;
+
+  & .image {
+    flex: 1 1 45rem;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .content {
+    flex: 1 1 45rem;
+
+    & h2 {
+      font-size: 3.5rem;
+      color: $black;
+      margin: 0 0 18px;
+
+      & span {
+        display: block;
+      }
+    }
+
+    & p {
+      font-size: 1.4rem;
+      color: $text;
+      line-height: 1.8;
+      margin-bottom: 4rem;
+      max-width: 40rem;
+    }
+
+    & a {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: bolder;
+
+      &:hover {
+        font-weight: bolder;
+      }
+    }
+
+    & .box {
+      & li {
+        list-style: none;
+        font-size: 1.4rem;
+        line-height: 1.8;
+        color: $text;
+
+        & i {
+          color: $blue;
+          margin-right: 1rem;
+        }
+
+        & .btn {
+          text-transform: uppercase;
+            font-size: 1.2rem;
+          font-weight: bolder;
+
+          &:hover {
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+}
+
+.optimization {
+  display: flex;
+  align-items: center;
+//   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding-top: 10rem;
+
+  & .image {
+    flex: 1 1 45rem;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .content {
+    flex: 1 1 45rem;
+
+    & h2 {
+      font-size: 3.5rem;
+      color: $black;
+      margin: 0 0 18px;
+
+      & span {
+        display: block;
+      }
+    }
+
+    
+
+    & .box {
+
+        margin-bottom: 4rem;
+
+      & li {
+        list-style: none;
+        font-size: 1.4rem;
+        line-height: 1.8;
+        color: $text;
+
+        & i {
+          color: $blue;
+          margin-right: 1rem;
+        }        
+      }
+    }
+
+    & .btn {
+        text-transform: uppercase;
+          font-size: 1.2rem;
+        font-weight: bolder;
+
+        &:hover {
+          font-weight: bolder;
+        }
+      }
+
+
+
+  }
+}
