@@ -4,12 +4,14 @@
 
 @media (min-width: 1200px) {
     .header {
-        padding: 2.125rem 1.5rem 2.125rem 2rem;
+        // padding: 2.125rem 1.5rem 2.125rem 2rem;
         // box-shadow: none;
         background: transparent;
     }
-}
 
+
+    
+}
 
 // @media (min-width: 992px) {
 // //   html {
@@ -79,6 +81,23 @@
 
             & h1 span {
                 display: inline;
+            }
+        }
+    };
+
+    .services {
+        & .box-container {
+            display: inline-block;
+
+            & .box {
+                margin-bottom: 4.5rem;
+                max-width: 21rem;
+                margin-right: auto;
+                margin-left: auto;
+                padding: 52px 32px 42px 32px;
+                border-radius: 0.5rem;
+                // background: transparent;
+                
             }
         }
     }

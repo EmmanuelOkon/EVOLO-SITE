@@ -21,9 +21,15 @@ html {
 
 body{
   overflow-x: hidden;
-  height: 300rem;
 }
 
 section{
   padding: 2rem 10%;
+}
+
+.heading{
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: $black;
 }
