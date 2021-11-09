@@ -1,7 +1,6 @@
 @import 'config';
 @import 'utilities';
 
-
 .home {
   background-image: url(../images/header-background.jpg);
   background-size: cover !important;
@@ -14,14 +13,14 @@
 
   & .image {
     flex: 1 1 45rem;
-    
+
     & img {
       width: 100%;
     }
   }
 
   & .content {
-    flex: 1 1 45rem;  
+    flex: 1 1 45rem;
 
     & h1 {
       font-size: 5rem;
@@ -39,18 +38,45 @@
       color: $text;
       line-height: 1.8;
       margin-bottom: 4rem;
-      
     }
 
-     & a {
-       text-transform: uppercase;
-       font-size: 1.2rem;
-       font-weight: bolder;
+    & a {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: bolder;
 
-
-       &:hover {
+      &:hover {
         font-weight: bolder;
-       }
-     };
-  };
-};
+      }
+    }
+  }
+}
+
+.trusted {
+
+  & h4 {
+    font-size: 2rem;
+    color: $black;
+    text-transform: capitalize;
+  }
+  
+  text-align: center;
+
+  & .trusted-slider {
+    background: $trusted;
+    padding: 3rem 0;
+    border-radius: 0.5rem;
+    margin-right: 3 rem;
+    margin-left: 3 rem;
+    padding-right: 2.5 rem;
+    padding-left: 2.5 rem;
+
+    & .box {
+
+      & .image {
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.pricing {
+  padding-top: 8rem;
+  text-align: center;
+
+  & .pricing-head {
+    & h1 {
+      text-transform: capitalize;
+    }
+
+    & p {
+      font-size: 1.7rem;
+      color: $text;
+      line-height: 1.8;
+      //   word-wrap: break-word;
+      word-spacing: 0.2px;
+      margin-bottom: 4rem;
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  & .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3.5rem;
+    padding: 3rem 0;
+
+    & .box {
+      //
+      margin-right: auto;
+      // margin-bottom: 4.5rem;
+      margin-left: auto;
+      padding: 52px 32px 42px 32px;
+      border: $box-border;
+      border-radius: 0.5rem;
+      background: transparent;
+      // height: 35rem;
+      vertical-align: center;
+
+      & h2 {
+        // padding: 2rem 0;
+        text-transform: uppercase;
+        color: $black;
+        font-size: 3rem;
+      }
+
+      & .text {
+        font-size: 1.4rem;
+        height: 5rem;
+        color: $text;
+      }
+
+      & .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        // padding-top: 2.5rem;
+        margin-top: 2.5rem;
+        border-top: $box-border;
+        // border-bottom: $box-border;
+        position: relative;
+        
+
+        & .amount {
+            color: $blue;
+            font-size: 5rem;
+            font-weight: bold;
+
+            
+        }
+
+        & img {
+          width: 2rem;
+          position: absolute;
+        //   top: 0;
+            left: 5.8rem;
+            font-weight: calc(100% - 3rem);
+            color: $blue;
+        }
+
+        & p:nth-child(1) {
+          color: red;
+          font-size: 2rem;
+
+          & span {
+            color: $blue;
+            font-size: 5rem;
+            font-weight: bold;
+          }
+        }
+
+        & p {
+          font-size: 1.4rem;
+          color: $text;
+          padding-top: 1.2rem;
+          display: block;
+          line-height: 2rem;
+        }
+      }
+
+      & li {
+        text-align: left;
+        font-size: 1.4rem;
+        color: $text;
+        padding: 1rem 0;
+        display: block;
+
+        & i {
+          padding-right: 0.5rem;
+          width: 2rem;
+        }
+
+        & .fa-check {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .services {
+    & .box-container {
+      display: inline-block;
+
+      & .box {
+        margin-bottom: 4.5rem;
+        max-width: 21rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 52px 32px 42px 32px;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+} ;
