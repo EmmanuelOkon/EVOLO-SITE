@@ -65,3 +65,12 @@ var swiper = new Swiper('.trusted-slider', {
     },
   },
 });
+
+$('input').on('focusin', function(){
+  $(this).parent().find('label').addClass('active');
+})
+$('input').on('focusin', function(){
+  if(!this.click){
+    $(this).parent().find('label').removeClass('active');
+  }
+});

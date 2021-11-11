@@ -1,0 +1,125 @@
+.form {
+  // padding: 5rem 0;
+  // margin-top: 5rem;
+  background: $trusted;
+
+  & .row {
+    display: flex;
+    align-items: center;
+    // flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    & .text {
+      margin-left: 10rem;
+      flex: 1 1 35rem;
+
+      & .heading {
+        text-align: left;
+        font-size: 3.4rem;
+
+        & span {
+          display: block;
+        }
+      }
+
+      & p {
+        line-height: 2rem;
+      }
+
+      & .form-text {
+        font-size: 1.4rem;
+        color: $text;
+        padding-bottom: 1.5rem;
+      }
+
+      & li {
+        list-style: none;
+        font-size: 1.4rem;
+        color: $text;
+        // line-height: 1.8rem;
+        padding-bottom: 1rem;
+
+        & span {
+          font-weight: bold;
+        }
+
+        & i {
+          color: $blue;
+          padding-right: 0.8rem;
+        }
+      }
+    }
+
+    & form {
+      margin-right: 10rem;
+      flex: 1 1 35rem;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      width: 100%;
+
+      // & input:focus {
+      //   border: $border;
+      // }
+
+      // &:focus {
+      //   border: $border;
+      // }
+
+      // & input::placeholder {
+      //   font-size: 1.4rem;
+      // }
+
+      // & input:focus::placeholder {
+      //   color: red;
+      //   position: relative;
+      //   top: -2rem;
+      //   font-size: 1rem;
+      //   font-weight: bold;
+      //   transition: top 0.2s ease-in-out;
+      //   // transition: width none;
+      // }
+
+      & .box {
+        width: 100%;
+        margin: 0.7rem 0;
+        border-radius: 0.5rem;
+        border: $box-border;
+        font-size: 1.6rem;
+        color: $black;
+        text-transform: none;
+        padding: 1.5rem;
+      }
+
+      & .btn {
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 100%;
+        padding: 1.4rem 4rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      & .agree {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+
+        & input {
+          margin-right: 0.5rem;
+        }
+
+        & label a {
+          color: $text;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
