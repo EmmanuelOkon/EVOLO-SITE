@@ -66,11 +66,29 @@ var swiper = new Swiper('.trusted-slider', {
   },
 });
 
-$('input').on('focusin', function(){
-  $(this).parent().find('label').addClass('active');
-})
-$('input').on('focusin', function(){
-  if(!this.click){
-    $(this).parent().find('label').removeClass('active');
-  }
+// $('input').on('focusin', function () {
+//   $(this).parent().find('label').addClass('active');
+// });
+// $('input').on('focusin', function () {
+//   if (!this.click) {
+//     $(this).parent().find('label').removeClass('active');
+//   }
+// });
+
+
+// let test = document.querySelector('.test');
+
+var swiper = new Swiper('.test', {
+  loop: true,
+  spaceBetween: 100,
+
+  centeredSlides: true,
+  autoplay: {
+    delay: 1400,
+    disableOnInteraction: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
