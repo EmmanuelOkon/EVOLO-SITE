@@ -23,13 +23,13 @@
 <body>
 
   <!-- Preloader -->
-  <!-- <div class="spinner-wrapper">
+  <div class="spinner-wrapper">
     <div class="spinner">
       <div class="bounce1"></div>
       <div class="bounce2"></div>
       <div class="bounce3"></div>
     </div>
-  </div> -->
+  </div>
   <!-- end of preloader -->
 
   <!-- header section starts  -->
@@ -57,7 +57,7 @@
 
   <!-- home section starts  -->
 
-  <!-- <section class="home" id="home">
+  <section class="home" id="home">
 
     <div class="content">
       <h1><span>StartUp Landing </span> Page Template Free</h1>
@@ -70,13 +70,13 @@
       <img src="./images/header-teamwork.svg" alt="header-teamwork">
     </div>
 
-  </section> -->
+  </section>
 
   <!-- home section ends -->
 
   <!-- Trust section starts -->
 
-  <!-- <section class="trusted" id="trusted">
+  <section class="trusted" id="trusted">
 
     <h4 class="heading">trusted by</h4>
 
@@ -124,13 +124,13 @@
 
     </div>
 
-  </section> -->
+  </section>
 
   <!-- Trust section ends -->
 
   <!-- services section starts  -->
 
-  <!-- <section class="services" id="services">
+  <section class="services" id="services">
 
     <div class="service-head">
       <h1 class="heading">business growth services </h1>
@@ -163,10 +163,10 @@
 
     </div>
 
-  </section> -->
+  </section>
 
 
-  <!-- <section class="servicesOffice" id="servicesOffice">
+  <section class="servicesOffice" id="servicesOffice">
 
     <div class="content">
       <h2> <span>Design And Plan Your</span> Business Growth Steps</h2>
@@ -179,9 +179,9 @@
       <img src="./images/details-1-office-worker.svg" alt="details-1-office-worker">
     </div>
 
-  </section> -->
+  </section>
 
-  <!-- <section class="optimization" id="optimization">
+  <section class="optimization" id="optimization">
 
     <div class="image">
       <img src="./images/details-2-office-team-work.svg" alt="details-2-office-team-work">
@@ -201,13 +201,13 @@
 
     </div>
 
-  </section> -->
+  </section>
 
   <!-- services section ends -->
 
   <!-- Pricing section begins -->
 
-  <!-- <section class="pricing" id="pricing">
+  <section class="pricing" id="pricing">
 
     <div class="pricing-head">
       <h1 class="heading">Multiple Pricing Options </h1>
@@ -280,14 +280,14 @@
 
     </div>
 
-  </section> -->
+  </section>
 
 
   <!-- Pricing section ends -->
 
   <!-- form section starts   -->
 
-  <!-- <section class="form" id="form">
+  <section class="form" id="form">
 
     <div class="row">
 
@@ -309,21 +309,18 @@
         <input type="text" placeholder="Full name" class="box">
         <input type="email" placeholder="Email" class="box">
         <input type="number" placeholder="Phone" class="box">
-        <input list="browsers" name="browser" placeholder="Interested in..." class="box">
-        <label for="cars" class="box">Choose a car:</label>
-        <select name="browswer" id="cars" class="box" placeholder="Interested in...">
-          <option value="volvo" disabled>Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
+
+        <!-- <label for="cars" class="box">Choose a car:</label> -->
+        <select class="form-control-select box" placeholder="Interested in..." id="rselect" required>
+          <option class="select-option" value="" disabled selected>Interested in...</option>
+          <option class="select-option" value="Personal Loan">Starter</option>
+          <option class="select-option" value="Car Loan">Medium</option>
+          <option class="select-option" value="House Loan">Complete</option>
         </select>
         <div class="agree">
           <input type="checkbox" id="agree" name="agree" value="agree">
-          <label for="agree"> I agree with Evolo's stated <a
-              href="https://demos.onepagelove.com/html/evolo/privacy-policy.html" target="_blank"
-              rel="noopener noreferrer">Privacy Policy</a> and <a
-              href="https://demos.onepagelove.com/html/evolo/terms-conditions.html" target="_blank"
-              rel="noopener noreferrer">Terms & Conditions</a></label>
+          <label for="agree"> I agree with Evolo's stated <a href="privacy-policy.html">Privacy Policy</a> and <a
+              href="term-condition.html">Terms & Conditions</a></label>
         </div>
 
         <input type="submit" value="request" class="btn">
@@ -331,26 +328,42 @@
 
     </div>
 
-  </section> -->
+  </section>
 
   <!-- form section ends -->
 
   <!-- Video Section begins -->
 
 
-  <!-- <section class="video" id="video">
+  <section class="video" id="video">
 
     <h3 class="heading">check out the video</h3>
+    <!-- <div class="image-container">
+      <div class="video-wrapper">
+        <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+          <img class="img-fluid" src="images/video-frame.svg" alt="alternative">
+          <span class="video-play-button">
+            <span></span>
+          </span>
+        </a>
+      </div>
+    </div> -->
 
-    <div class="videoImg">
-      <img src="./images/video-frame.svg" alt="video-frame">
-      <div class="menu"><i class="fa fa-play" aria-hidden="true"></i></div>
+    <div class=" image-container">
+      <div class="video-wrapper">
+        <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+          <img class="img-fluid" src="./images/video-frame.svg" alt="video-frame">
+          <span class="video-play-button">
+            <span></span>
+          </span>
+        </a>
+      </div>
     </div>
-    <div class="videoText">
-      <p class="video-text">This video will show you a case study for one of our <span>Major Customers</span> and will
+    <!-- <div class="videoText"> -->
+    <p class="video-text">This video will show you a case study for one of our <span>Major Customers</span> and will
         help you understand why your startup needs Evolo in this highly competitive market</p>
-    </div>
-  </section> -->
+    <!-- </div> -->
+  </section>
 
   <!-- Video Section ends -->
 
@@ -361,22 +374,10 @@
     <div class="image">
       <img src="./images/testimonials-2-men-talking.svg" alt="testimonials-2-men-talking">
     </div>
-
-    <!-- <div class="content"> -->
-    <!-- <div class="testimonial-head">
-        <h3>testimonials</h3>
-      </div> -->
-
-
-    <!-- </div> -->
-
-    <!-- <div class="testimonial-head">
-      <h3>testimonials</h3>
-    </div> -->
     <div class="swiper test" id="test">
-      <!-- <div class="testimonial-head">
+      <div class="testimonial-head">
         <h3>testimonials</h3>
-      </div> -->
+      </div>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="card">
@@ -411,7 +412,7 @@
             </div>
           </div>
         </div>
-        
+
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
