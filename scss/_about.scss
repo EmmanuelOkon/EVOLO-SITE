@@ -1,26 +1,28 @@
 .about {
+    padding-top: 10rem;
+    padding-bottom: 4rem;
   text-align: center;
 
   & .about-head {
-        & h1 {
-        text-transform: capitalize;
-        }
+    & h1 {
+      text-transform: capitalize;
+    }
 
-        & p {
-            font-size: 1.6rem;
-            color: $text;
-            line-height: 1.8;
-            margin-bottom: 4rem;
-            width: 55%;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    & p {
+      font-size: 1.6rem;
+      color: $text;
+      line-height: 1.8;
+      //   margin-bottom: 4rem;
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   & .box-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem 0;
+    padding: 2rem 0;
 
     & .box {
       //
@@ -29,9 +31,20 @@
       padding: 52px 32px 42px 32px;
       vertical-align: center;
 
-      & img {
-        width: 20rem;
+      & .image {
+        height: 20rem;
+        overflow: hidden;
         border-radius: 50%;
+
+        & img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &:hover .image img {
+        transform: scale(1.2);
       }
 
       & h3 {
@@ -46,6 +59,28 @@
         font-size: 1.4rem;
         height: 5rem;
         color: $text;
+      }
+
+      & .aboutSocial {
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+        text-align: center;
+
+        & a {
+          font-size: 1.2rem;
+          background: $blue;
+          color: $white;
+          margin: 0 1rem;
+          // font-weight: 600;
+          border-radius: 50%;
+          height: 3rem;
+          width: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }
