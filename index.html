@@ -305,12 +305,10 @@
           it the most</li>
       </div>
 
-      <form action="">
-        <input type="text" placeholder="Full name" class="box">
-        <input type="email" placeholder="Email" class="box">
-        <input type="number" placeholder="Phone" class="box">
-
-        <!-- <label for="cars" class="box">Choose a car:</label> -->
+      <form action="" id="formInput">
+        <input type="text" id="fullName" placeholder="Full name" class="box" autocomplete="off">
+        <input type="email" id="email" placeholder="Email" class="box" autocomplete="off">
+        <input type="number" id="phone" placeholder="Phone" class="box" autocomplete="off">
         <select class="form-control-select box" placeholder="Interested in..." id="rselect" required>
           <option class="select-option" value="" disabled selected>Interested in...</option>
           <option class="select-option" value="Personal Loan">Starter</option>
@@ -322,7 +320,6 @@
           <label for="agree"> I agree with Evolo's stated <a href="privacy-policy.html">Privacy Policy</a> and <a
               href="term-condition.html">Terms & Conditions</a></label>
         </div>
-
         <input type="submit" value="request" class="btn">
       </form>
 
@@ -338,18 +335,8 @@
   <section class="video" id="video">
 
     <h3 class="heading">check out the video</h3>
-    <!-- <div class="image-container">
-      <div class="video-wrapper">
-        <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
-          <img class="img-fluid" src="images/video-frame.svg" alt="alternative">
-          <span class="video-play-button">
-            <span></span>
-          </span>
-        </a>
-      </div>
-    </div> -->
 
-    <div class=" image-container">
+    <div class="image-container">
       <div class="video-wrapper">
         <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
           <img class="img-fluid" src="./images/video-frame.svg" alt="video-frame">
@@ -361,7 +348,7 @@
     </div>
     <!-- <div class="videoText"> -->
     <p class="video-text">This video will show you a case study for one of our <span>Major Customers</span> and will
-        help you understand why your startup needs Evolo in this highly competitive market</p>
+      help you understand why your startup needs Evolo in this highly competitive market</p>
     <!-- </div> -->
   </section>
 
@@ -423,16 +410,74 @@
 
   <!-- Testimonials Section ends -->
 
+  <!-- Team Section begins -->
+
+
+  <section class="about" id="about">
+
+    <div class="about-head">
+      <h1 class="heading">about the team </h1>
+      <p>Meat our team of specialized marketers and business developers which will help you research new products and
+        launch them in new emerging markets</p>
+    </div>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="./images/team-member-1.svg" alt="team-member-1">
+        <h3>Lacy Whitelong</h3>
+        <p>Business Developer</p>
+        <div class="aboutSocial">
+          <a href="#" class="navSocial"> <i class="fab fa-facebook-f"></i> </a>
+          <a href="#" class="navSocial"> <i class="fab fa-twitter"></i> </a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="./images/team-member-2.svg" alt="team-member-2">
+        <h3>Chris Brown</h3>
+        <p>Online Marketer</p>
+        <div class="aboutSocial">
+          <a href="#" class="navSocial"> <i class="fab fa-facebook-f"></i> </a>
+          <a href="#" class="navSocial"> <i class="fab fa-twitter"></i> </a>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="./images/team-member-3.svg" alt="team-member-3">
+        <h3>Sheila Zimerman</h3>
+        <p>Software Engineer</p>
+        <div class="aboutSocial">
+          <a href="#" class="navSocial"> <i class="fab fa-facebook-f"></i> </a>
+          <a href="#" class="navSocial"> <i class="fab fa-twitter"></i> </a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="./images/team-member-4.svg" alt="team-member-4">
+        <h3>Mary Villalonga</h3>
+        <p>Product Manager</p>
+        <div class="aboutSocial">
+          <a href="#" class="navSocial"> <i class="fab fa-facebook-f"></i> </a>
+          <a href="#" class="navSocial"> <i class="fab fa-twitter"></i> </a>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <!-- Team Section begins -->
+
+
+
+
 
   <!-- scroll top button -->
   <!-- <a href="#home" class="fas fa-angle-up" id="scroll-top"></a> -->
   <a href="#home" id="scroll-top"><img src="./images/up-arrow.png" alt=""></a>
-
-
-
-
-
-
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
