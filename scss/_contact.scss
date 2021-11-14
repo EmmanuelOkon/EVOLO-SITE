@@ -1,0 +1,50 @@
+.contact {
+  padding-top: 7 rem;
+  padding-bottom: 6.25 rem;
+    background: url(../images/contact-background.jpg) center center no-repeat;
+  //   background-size: cover;
+//   background: url(../images/contact-background.jpg);
+
+  & .heading {
+    text-align: center;
+  }
+
+  & .heading-text {
+    text-align: center;
+  }
+
+  & .row {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    & .map {
+      flex: 1 1 42rem;
+      width: 100%;
+    }
+
+    & form {
+      flex: 1 1 42rem;
+      padding: 2rem;
+      text-align: center;
+      background: transparent;
+
+      
+
+      & .box {
+        width: 100%;
+        padding: 1rem 1.2rem;
+        background: $white;
+        color: $white;
+        font-size: 1.6rem;
+        text-transform: none;
+        margin: 0.7rem 0;
+      }
+
+      & textarea {
+        height: 15rem;
+        resize: none;
+      }
+    }
+  }
+}
