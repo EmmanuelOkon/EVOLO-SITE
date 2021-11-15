@@ -1,49 +1,103 @@
 .contact {
   padding-top: 7 rem;
   padding-bottom: 6.25 rem;
-    background: url(../images/contact-background.jpg) center center no-repeat;
-  //   background-size: cover;
-//   background: url(../images/contact-background.jpg);
+  background: url(../images/contact-background.jpg) center center no-repeat;
 
-  & .heading {
+  .heading {
+    padding-top: 10rem;
     text-align: center;
+    text-transform: capitalize;
   }
 
-  & .heading-text {
+  .heading-text {
     text-align: center;
+    font-size: 1.6rem;
+    color: $text;
+    line-height: 2.5rem;
+    padding-bottom: 5rem;
+
+    a {
+      color: $text;
+      padding-right: 2.5rem;
+    }
+
+    i {
+      color: $blue;
+      padding-right: 1rem;
+    }
+
+    .turquoise {
+      color: $blue;
+      text-decoration: underline;
+    }
   }
 
   & .row {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
+    gap: 5rem;
 
     & .map {
       flex: 1 1 42rem;
       width: 100%;
+      border-radius: 0.5rem;
     }
 
-    & form {
+    form {
       flex: 1 1 42rem;
       padding: 2rem;
       text-align: center;
       background: transparent;
 
-      
-
-      & .box {
+      .box {
         width: 100%;
-        padding: 1rem 1.2rem;
+        padding: 1.4rem 2rem;
         background: $white;
-        color: $white;
+        // color: $white;
         font-size: 1.6rem;
         text-transform: none;
         margin: 0.7rem 0;
+        border: $box-border;
+        border-radius: .5rem;
+
+        &:hover {
+          border: 0.1px solid gray;
+        }
       }
 
       & textarea {
         height: 15rem;
         resize: none;
+      }
+
+      & .agree {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        width: 100%;
+
+        & input {
+          margin-right: 0.5rem;
+        }
+
+        & label a {
+          color: $text;
+          text-decoration: underline;
+        }
+      }
+
+      .btn {
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 100%;
+        padding: 1.4rem 4rem;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
