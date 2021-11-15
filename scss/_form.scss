@@ -4,9 +4,9 @@
   background: $trusted;
 
   & .row {
-    display: flex;
+    display: grid;
     align-items: center;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 2rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
