@@ -1,0 +1,59 @@
+.footer {
+  background: $white;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+
+  & .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+
+    & .box {
+      & h3 {
+        font-size: 2.2rem;
+        color: $black;
+        padding: 2rem 0;
+        text-transform: capitalize;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: $text;
+        word-spacing: 0.3rem;
+        line-height: 2rem;
+      }
+
+      li {
+        font-size: 1.4rem;
+        color: $text;
+        line-height: 2rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding-bottom: 1rem;
+
+        a {
+          color: $blue;
+          text-decoration: underline;
+          padding-left: 3px;
+        }
+
+        i {
+          color: $blue;
+          font-size: .8rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+
+  & .credit {
+    // padding: 1rem;
+    padding-top: 2.5rem;
+    margin-top: 5rem;
+    border-top: $box-border;
+    font-size: 1.2rem;
+    color: $text;
+    text-align: center;
+  }
+}
